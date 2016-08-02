@@ -13,4 +13,7 @@
   	<module>open-bbs.interface</module>
   	<module>open-bbs.core</module>
   </modules>
+  <properties>
+  	<project.version>0.0.1</project.version>
+  </properties>
 </project>
