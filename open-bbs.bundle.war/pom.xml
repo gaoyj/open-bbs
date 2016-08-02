@@ -6,12 +6,10 @@
 	<parent>
 		<groupId>top.sixgod</groupId>
 		<artifactId>open-bbs.parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>{project.version}-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
-	<groupId>top.sixgod</groupId>
 	<artifactId>open-bbs.bundle.war</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>open-bbs.bundle.war Maven Webapp</name>
 	<url>http://maven.apache.org</url>
