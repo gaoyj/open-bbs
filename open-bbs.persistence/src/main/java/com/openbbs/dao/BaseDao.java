@@ -5,6 +5,8 @@ import java.util.Map;
 
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import com.openbbs.dao.exception.RowMismatchException;
+
 /**
  * @author Jdz
  *
@@ -14,28 +16,12 @@ public interface BaseDao<T> {
 
 	public void setSuperSessionFactroy(SqlSessionFactory sessionFactory);
 
-	public List<T> selectFind(String str, T t);
+	public List<T> find(String statement);
+	
+	public boolean insert(String statement , T t);
 
-	public List<T> find(String str);
+	public boolean update(String statement, T t, Integer... rows) throws RowMismatchException ;
 
-	public T get(String str, T t);
-
-	public boolean insert(String str , T model);
-
-	public boolean update(String str, T t);
-
-	public boolean delete(String str,int id);
-
-	public List<T> find(String str,String str2);
-
-	public T get(String str,String str2);
-
-	public List<T> get(String str,Map<String,Object> str2);
-
-	public boolean updatebyid(String str1,String str2);
-
-	public boolean  deletebyproductid(String str1,String id);
-
-	public List<T> SelectListMap(String sqlstr ,Map<String, Object> map);
+	public boolean delete(String statement, T t, Integer... rows) throws RowMismatchException ;
 
 }
