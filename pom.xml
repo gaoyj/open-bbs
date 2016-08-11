@@ -17,9 +17,129 @@
   </modules>
   <properties>
   	<project.version>0.0.1</project.version>
-  	<spring.version></spring.version>
+  	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<spring.version>4.2.4.RELEASE</spring.version>
+	<mybatis.version>3.2.4</mybatis.version>
+	<slf4j.version>1.7.18</slf4j.version>
+	<logback.version>1.0.13</logback.version>
   </properties>
   <dependencies>
-  	
+	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.9</version>
+		<scope>test</scope>
+	</dependency>
+
+	<!-- spring -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-core</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-beans</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-context</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-web</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+
+    <dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-webmvc</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+
+    <dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-tx</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-jdbc</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-test</artifactId>
+		<version>${spring.version}</version>
+		<scope>test</scope>
+	</dependency>
+
+	<!--mybatis spring -->
+	<dependency>
+		<groupId>org.mybatis</groupId>
+		<artifactId>mybatis</artifactId>
+		<version>3.3.1</version>
+	</dependency>
+
+	<!--mybatis spring  -->
+	<dependency>
+		<groupId>org.mybatis</groupId>
+		<artifactId>mybatis-spring</artifactId>
+		<version>1.2.4</version>
+	</dependency>
+
+	<!-- mysql -->
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>5.1.38</version>
+	</dependency>
+
+	<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+	</dependency>
+
+	<dependency>
+	  <groupId>commons-collections</groupId>
+	  <artifactId>commons-collections</artifactId>
+	  <version>20040616</version>
+	</dependency>
+
+    <dependency>
+		<groupId>org.json</groupId>
+		<artifactId>json</artifactId>
+		<version>20151123</version>
+	</dependency>
+	
+   	<dependency>
+		<groupId>commons-io</groupId>
+		<artifactId>commons-io</artifactId>
+		<version>2.4</version>
+	</dependency>
+
+	<dependency>
+		<groupId>commons-fileupload</groupId>
+		<artifactId>commons-fileupload</artifactId>
+		<version>1.2.2</version>
+	</dependency>
+	
+	<!-- redis -->
+	<dependency>  
+		<groupId>redis.clients</groupId>  
+		<artifactId>jedis</artifactId>  
+		<version>2.1.0</version>  
+		<type>jar</type>  
+		<scope>compile</scope>  
+	</dependency> 
+
   </dependencies>
 </project>
