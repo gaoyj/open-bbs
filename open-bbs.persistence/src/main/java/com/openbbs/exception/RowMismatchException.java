@@ -1,4 +1,4 @@
-package com.openbbs.dao.exception;
+package com.openbbs.exception;
 
 public class RowMismatchException extends Exception {
 
