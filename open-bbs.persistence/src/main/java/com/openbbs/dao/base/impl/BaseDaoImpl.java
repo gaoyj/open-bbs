@@ -1,14 +1,14 @@
-package com.openbbs.dao;
+package com.openbbs.dao.base.impl;
 
 import java.util.List;
 import java.util.Map;
 
+import javax.annotation.Resource;
 
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.support.SqlSessionDaoSupport;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.openbbs.dao.exception.RowMismatchException;
 /**
  * @author Jdz
  *
@@ -16,6 +16,7 @@ import com.openbbs.dao.exception.RowMismatchException;
  */
 public class BaseDaoImpl<T> extends SqlSessionDaoSupport implements BaseDao<T>{
 
+	@Resource
 	public void setSuperSessionFactroy(SqlSessionFactory sessionFactory) {
 		super.setSqlSessionFactory(sessionFactory);
 	}

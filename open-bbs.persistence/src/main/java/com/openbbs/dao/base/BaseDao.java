@@ -1,4 +1,4 @@
-package com.openbbs.dao;
+package com.openbbs.dao.base;
 
 import java.util.List;
 import java.util.Map;
