@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>top.sixgod</groupId>
 		<artifactId>open-bbs.parent</artifactId>
-		<version>{project.version}-SNAPSHOT</version>
+		<version>0.0.1-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<artifactId>open-bbs.common</artifactId>
