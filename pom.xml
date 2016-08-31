@@ -41,6 +41,7 @@
 		<spring-data-redis.version>1.6.4.RELEASE</spring-data-redis.version>
 		<jedis.version>2.8.1</jedis.version>
 		<activeMQ.version>5.14.0</activeMQ.version>
+		<kafka.version>0.10.0.0</kafka.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -462,6 +463,13 @@
 				<groupId>org.apache.activemq</groupId>
 				<artifactId>activemq-all</artifactId>
 				<version>${activeMQ.version}</version>
+			</dependency>
+			
+			<!-- kafka -->
+			<dependency>
+				<groupId>org.apache.kafka</groupId>
+				<artifactId>kafka_2.11</artifactId>
+				<version>${kafka.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
